@@ -12,9 +12,10 @@ GameObject:
   - component: {fileID: 4111622922299962056}
   - component: {fileID: 6459443905897264706}
   - component: {fileID: 253987461468485194}
+  - component: {fileID: 5983917605270233313}
   m_Layer: 0
   m_Name: Bone
-  m_TagString: Untagged
+  m_TagString: Bone
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -99,3 +100,24 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ab5c4cc47b8a8db45aa096a15bccb2ba, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!65 &5983917605270233313
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8500012261990540414}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 1
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 0.6528887, y: 0.32837063, z: 0.29866803}
+  m_Center: {x: 0, y: 0.16418532, z: 0}

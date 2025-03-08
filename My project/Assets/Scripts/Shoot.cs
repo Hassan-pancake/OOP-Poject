@@ -3,7 +3,8 @@ using UnityEngine;
 public class Shoot : MonoBehaviour
 {
     float speed = 30;
-    float rotationSpeed = 360; 
+    float rotationSpeed = 360;
+    private int damage = 1;
 
     private void Update()
     {
@@ -19,6 +20,14 @@ public class Shoot : MonoBehaviour
         if (transform.position.z >20)
         {
             Destroy(gameObject);
+        }
+    }
+    private void OnTriggerEnter(Collider other)
+    {
+        if (other.gameObject.TryGetComponent(out EnemyBase enemy))
+        {
+            enemy.TakeDamage(damage);
+            Destroy(gameObject); // Destroy bone after hitting
         }
     }
 }
